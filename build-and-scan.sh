@@ -7,7 +7,7 @@ for c in docker trivy jq; do
 		all_cmds_available=0
 	fi
 done
-if [ $all_cmd_available -eq 0 ]; then
+if [ $all_cmds_available -eq 0 ]; then
 	echo "FATAL: One or more required executables are not available.  Stopping."
 	exit 1
 fi
